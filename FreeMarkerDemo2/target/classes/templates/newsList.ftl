@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>新闻焦点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>鏂伴椈鐒︾偣</title>
 </head>
 <body>
     <div id="container">
-    <h2>新闻焦点</h2>
+    <h2>鏂伴椈鐒︾偣</h2>
     <#setting number_format="#">
     <ul>
         <#list articles as article>

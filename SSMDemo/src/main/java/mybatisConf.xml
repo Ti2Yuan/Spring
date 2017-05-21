@@ -39,7 +39,7 @@
      </environment>
   </environments> -->
   
-  <mappers>
+  <!-- <mappers>
      <mapper resource="com/chen/ssmdemo/mapper/GoodsMapper.xml"/>
-  </mappers>
+  </mappers> -->
 </configuration>
