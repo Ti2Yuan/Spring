@@ -24,6 +24,7 @@ public class Goods implements Serializable {
 	private int id;
 
 	//名称
+	//pattern和notNull来自目录下的ValidationMessage.properties文件
 	@Pattern(regexp="^[^><&#]{1,50}$",message="{pattern}")
 	@NotNull(message="{notNull}")
 	private String name;

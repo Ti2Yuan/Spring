@@ -11,7 +11,8 @@
 <body>
   <div class="main">
     <h2 class="title"><span>商品管理</span></h2>
-    <form action="deletes" method="post">
+    <!-- <form action="deletes" method="post"> -->
+    <form action="<c:url value="/goods/deletes?pageNO=${pageNO}"/>" method="post">
        <table border="1" width="100%" class="tab">
           <tr> 
              <th> <input type="checkbox" id="chbAll"></th>
@@ -29,8 +30,11 @@
                <td><img src="<c:url value="/images/${good.picture}"/>" height="40"/></td>
                <td>${good.price}</td>
                <td>
-                  <a href="delete/${good.id}" class="abtn">删除</a>
-                  <a href="edit/${good.id}" class="abtn">编辑</a>
+                  <%-- <a href="delete/${good.id}" class="abtn">删除</a>
+                  <a href="edit/${good.id}" class="abtn">编辑</a> --%>
+                  <a href="<c:url value="/goods/"/>delete/${good.id}?pageNO=${pageNO}" class="abtn">删除</a>
+                  <a href="<c:url value="/goods/"/>edit/${good.id}" class="abtn">编辑</a>
+                  <a href="<c:url value="/goods/"/>upPicture/${good.id}" class="abtn">上传</a>
                </td>
             </tr>
           </c:forEach>
