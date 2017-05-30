@@ -36,7 +36,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
      <!-- 启动优先级，越小则越早加载 -->
      <load-on-startup>1</load-on-startup>
      
-     <!-- Servlet3.0 以上文件上传配置 -->
+     <!-- Servlet3.0 以上 文件上传配置 -->
      <multipart-config>
      <!-- 上传文件的最大限制5MB -->
         <max-file-size>5242880</max-file-size>
